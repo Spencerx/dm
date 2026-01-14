@@ -1,5 +1,11 @@
 # Changelog
 
+## dm 1.0.12.9014
+
+### Continuous integration
+
+- Tweaks ([\#2354](https://github.com/cynkra/dm/issues/2354)).
+
 ## dm 1.0.12.9013
 
 ### Continuous integration
