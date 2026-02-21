@@ -36,9 +36,9 @@ dm_from_con(
   **\[experimental\]**
 
   Set to `TRUE` to query the definition of primary and foreign keys from
-  the database. Currently works only for Postgres/Redshift and SQL
-  Server databases. The default attempts to query and issues an
-  informative message.
+  the database. Currently works for Postgres/Redshift, MariaDB/MySQL,
+  SQLite, SQL Server, and DuckDB databases. The default attempts to
+  query and issues an informative message.
 
 - .names:
 
@@ -59,9 +59,9 @@ dm_from_con(
   Additional parameters for the schema learning query.
 
   - `schema`: supported for MSSQL (default: `"dbo"`), Postgres/Redshift
-    (default: `"public"`), and MariaDB/MySQL (default: current
-    database). Learn the tables in a specific schema (or database for
-    MariaDB/MySQL).
+    (default: `"public"`), MariaDB/MySQL (default: current database) and
+    SQLite (default: main schema). Learn the tables in a specific schema
+    (or database for MariaDB/MySQL).
 
   - `dbname`: supported for MSSQL. Access different databases on the
     connected MSSQL-server; default: active database.
