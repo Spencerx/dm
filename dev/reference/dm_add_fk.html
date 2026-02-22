@@ -188,7 +188,8 @@ This can happen</p><ol><li><p>when a FK is added without a corresponding PK or U
 <span class="r-in"><span>    <span class="fu">dm_add_fk</span><span class="op">(</span><span class="va">flights</span>, <span class="va">tailnum</span>, <span class="va">planes</span>, check <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Error in abort_not_subset_of(table_name, col_name, ref_table_name, ref_col_name) : </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   Column (`tailnum`) of table `flights` contains values (see examples above) that are not present in column (`tailnum`) of table `planes`.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Column (`tailnum`) of table <span style="color: #00BB00;">flights</span> contains values (see examples above)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> that are not present in column (`tailnum`) of table <span style="color: #00BB00;">planes</span>.</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
