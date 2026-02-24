@@ -1,5 +1,20 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# dm 1.0.99.9901
+
+## Chore
+
+- Document.
+
+## Documentation
+
+- Update examples and vignettes to use `summarize(.by = ...)` instead of `group_by()` (#2415, #2416).
+
+## Testing
+
+- Snapshot updates for R-CMD-check-dev ({"package":"duckplyr"}) (#2419).
+
+
 # dm 1.0.99.9900
 
 ## Features
