@@ -1,28 +1,6 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
-# dm 1.0.99.9902
-
-## Chore
-
-- Auto-update from GitHub Actions (#2421).
-
-
-# dm 1.0.99.9901
-
-## Chore
-
-- Document.
-
-## Documentation
-
-- Update examples and vignettes to use `summarize(.by = ...)` instead of `group_by()` (#2415, #2416).
-
-## Testing
-
-- Snapshot updates for R-CMD-check-dev ({"package":"duckplyr"}) (#2419).
-
-
-# dm 1.0.99.9900
+# dm 1.1.0
 
 ## Features
 
@@ -96,6 +74,11 @@
   The new pattern ensures that scripts written today will work after that change.
   Set `options(dm.suppress_dplyr_startup_message = TRUE)` to turn off the startup message.
 
+  ``` r
+  library(dplyr) # or library(tidyverse)
+  library(dm)
+  ```
+
 - `copy_dm_to()` now uses `dm_sql()` internally and creates key constraints on the
   database (@krlmlr, #1887, #2022).
   Unique keys and autoincrement primary keys (#1725) are set up automatically.
@@ -119,10 +102,8 @@
   The defaults are `"public"` (Postgres), `"dbo"` (MSSQL), and the current
   database (MariaDB), avoiding spurious system tables.
 
-- Fixed a spurious message from `dm_rm_fk()` when foreign keys reference
+- `dm_rm_fk()` no longer issues a spurious message when foreign keys reference
   non-primary-key columns (#1270, #2367).
-
-- Corrected the deprecation warning message for `dm_squash_to_tbl()` (#1364, #2302).
 
 - `dm_paste()` limits its pipelines to up to 100 steps, splitting longer pipelines as needed (#2301).
 
