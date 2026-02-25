@@ -261,9 +261,7 @@ dplyr operations we want.
 fin_dm_total <-
   fin_dm_keys %>%
   dm_zoom_to(loans) %>%
-  group_by(account_id) %>%
-  summarize(total_amount = sum(amount, na.rm = TRUE)) %>%
-  ungroup() %>%
+  summarize(.by = account_id, total_amount = sum(amount, na.rm = TRUE)) %>%
   dm_insert_zoomed("total_loans")
 
 fin_dm_total$total_loans
@@ -358,7 +356,7 @@ The {dm} package follows the tidyverse principles:
 
 The {dm} package builds heavily upon the [{datamodelr}
 package](https://github.com/bergant/datamodelr), and upon the
-[tidyverse](https://www.tidyverse.org/). We’re looking forward to a good
+[tidyverse](https://tidyverse.org/). We’re looking forward to a good
 collaboration!
 
 The [{polyply} package](https://github.com/russHyde/polyply) has a
