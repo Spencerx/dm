@@ -1,31 +1,22 @@
 # Changelog
 
-## dm 1.0.99.9902
+## dm 1.1.0.9000
 
 ### Chore
+
+- Re-add remote while we’re waiting for a maintainer update.
 
 - Auto-update from GitHub Actions
   ([\#2421](https://github.com/cynkra/dm/issues/2421)).
 
-## dm 1.0.99.9901
+### fledge
 
-### Chore
+- CRAN release v1.1.0
+  ([\#2420](https://github.com/cynkra/dm/issues/2420)).
 
-- Document.
+## dm 1.1.0
 
-### Documentation
-
-- Update examples and vignettes to use `summarize(.by = ...)` instead of
-  [`group_by()`](https://dplyr.tidyverse.org/reference/group_by.html)
-  ([\#2415](https://github.com/cynkra/dm/issues/2415),
-  [\#2416](https://github.com/cynkra/dm/issues/2416)).
-
-### Testing
-
-- Snapshot updates for R-CMD-check-dev ({“package”:“duckplyr”})
-  ([\#2419](https://github.com/cynkra/dm/issues/2419)).
-
-## dm 1.0.99.9900
+CRAN release: 2026-02-25
 
 ### Features
 
@@ -123,6 +114,11 @@
   `options(dm.suppress_dplyr_startup_message = TRUE)` to turn off the
   startup message.
 
+  ``` r
+  library(dplyr) # or library(tidyverse)
+  library(dm)
+  ```
+
 - [`copy_dm_to()`](https://dm.cynkra.com/dev/reference/copy_dm_to.md)
   now uses [`dm_sql()`](https://dm.cynkra.com/dev/reference/dm_sql.md)
   internally and creates key constraints on the database
@@ -159,16 +155,11 @@
   `"public"` (Postgres), `"dbo"` (MSSQL), and the current database
   (MariaDB), avoiding spurious system tables.
 
-- Fixed a spurious message from
-  [`dm_rm_fk()`](https://dm.cynkra.com/dev/reference/dm_rm_fk.md) when
-  foreign keys reference non-primary-key columns
+- [`dm_rm_fk()`](https://dm.cynkra.com/dev/reference/dm_rm_fk.md) no
+  longer issues a spurious message when foreign keys reference
+  non-primary-key columns
   ([\#1270](https://github.com/cynkra/dm/issues/1270),
   [\#2367](https://github.com/cynkra/dm/issues/2367)).
-
-- Corrected the deprecation warning message for
-  [`dm_squash_to_tbl()`](https://dm.cynkra.com/dev/reference/deprecated.md)
-  ([\#1364](https://github.com/cynkra/dm/issues/1364),
-  [\#2302](https://github.com/cynkra/dm/issues/2302)).
 
 - [`dm_paste()`](https://dm.cynkra.com/dev/reference/dm_paste.md) limits
   its pipelines to up to 100 steps, splitting longer pipelines as needed

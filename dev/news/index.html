@@ -7,7 +7,7 @@
     <a href="https://cynkra.com" class="external-link logo-cynkra"><img src="https://cynkra.com/assets/img/logo-cynkra-square.svg" alt="cynkra" width="100" height="100"><div class="sr-only">cynkra</div></a>
     <a class="navbar-brand me-2" href="../index.html">dm</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.0.99.9902</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.1.0.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,31 +55,21 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.0.99.9902" id="dm-10999902">dm 1.0.99.9902<a class="anchor" aria-label="anchor" href="#dm-10999902"></a></h2>
+<h2 class="pkg-version" data-toc-text="1.1.0.9000" id="dm-1109000">dm 1.1.0.9000<a class="anchor" aria-label="anchor" href="#dm-1109000"></a></h2>
 <div class="section level3">
-<h3 id="chore-1-0-99-9902">Chore<a class="anchor" aria-label="anchor" href="#chore-1-0-99-9902"></a></h3>
-<ul><li>Auto-update from GitHub Actions (<a href="https://github.com/cynkra/dm/issues/2421" class="external-link">#2421</a>).</li>
+<h3 id="chore-1-1-0-9000">Chore<a class="anchor" aria-label="anchor" href="#chore-1-1-0-9000"></a></h3>
+<ul><li><p>Re-add remote while we’re waiting for a maintainer update.</p></li>
+<li><p>Auto-update from GitHub Actions (<a href="https://github.com/cynkra/dm/issues/2421" class="external-link">#2421</a>).</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="fledge-1-1-0-9000">fledge<a class="anchor" aria-label="anchor" href="#fledge-1-1-0-9000"></a></h3>
+<ul><li>CRAN release v1.1.0 (<a href="https://github.com/cynkra/dm/issues/2420" class="external-link">#2420</a>).</li>
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.0.99.9901" id="dm-10999901">dm 1.0.99.9901<a class="anchor" aria-label="anchor" href="#dm-10999901"></a></h2>
+<h2 class="pkg-version" data-toc-text="1.1.0" id="dm-110">dm 1.1.0<a class="anchor" aria-label="anchor" href="#dm-110"></a></h2><p class="text-muted">CRAN release: 2026-02-25</p>
 <div class="section level3">
-<h3 id="chore-1-0-99-9901">Chore<a class="anchor" aria-label="anchor" href="#chore-1-0-99-9901"></a></h3>
-<ul><li>Document.</li>
-</ul></div>
-<div class="section level3">
-<h3 id="documentation-1-0-99-9901">Documentation<a class="anchor" aria-label="anchor" href="#documentation-1-0-99-9901"></a></h3>
-<ul><li>Update examples and vignettes to use <code>summarize(.by = ...)</code> instead of <code><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by()</a></code> (<a href="https://github.com/cynkra/dm/issues/2415" class="external-link">#2415</a>, <a href="https://github.com/cynkra/dm/issues/2416" class="external-link">#2416</a>).</li>
-</ul></div>
-<div class="section level3">
-<h3 id="testing-1-0-99-9901">Testing<a class="anchor" aria-label="anchor" href="#testing-1-0-99-9901"></a></h3>
-<ul><li>Snapshot updates for R-CMD-check-dev ({“package”:“duckplyr”}) (<a href="https://github.com/cynkra/dm/issues/2419" class="external-link">#2419</a>).</li>
-</ul></div>
-</div>
-    <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.0.99.9900" id="dm-10999900">dm 1.0.99.9900<a class="anchor" aria-label="anchor" href="#dm-10999900"></a></h2>
-<div class="section level3">
-<h3 id="features-1-0-99-9900">Features<a class="anchor" aria-label="anchor" href="#features-1-0-99-9900"></a></h3>
+<h3 id="features-1-1-0">Features<a class="anchor" aria-label="anchor" href="#features-1-1-0"></a></h3>
 <ul><li>
 <p>Aligned with dplyr 1.2.0, all new verbs and arguments are supported.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
@@ -120,11 +110,16 @@
 <li><p>All user-facing messages now use <code><a href="https://cli.r-lib.org/reference/cli_abort.html" class="external-link">cli::cli_inform()</a></code> with native formatting (<a href="https://github.com/cynkra/dm/issues/2374" class="external-link">#2374</a>).</p></li>
 </ul></div>
 <div class="section level3">
-<h3 id="breaking-changes-1-0-99-9900">Breaking changes<a class="anchor" aria-label="anchor" href="#breaking-changes-1-0-99-9900"></a></h3>
-<ul><li><p>A startup message now recommends running <code><a href="https://dplyr.tidyverse.org" class="external-link">library(dplyr)</a></code> before <code><a href="https://dm.cynkra.com/">library(dm)</a></code>. In a future version, the dm package will no longer reexport all dplyr functions. The new pattern ensures that scripts written today will work after that change. Set <code>options(dm.suppress_dplyr_startup_message = TRUE)</code> to turn off the startup message.</p></li>
+<h3 id="breaking-changes-1-1-0">Breaking changes<a class="anchor" aria-label="anchor" href="#breaking-changes-1-1-0"></a></h3>
+<ul><li>
+<p>A startup message now recommends running <code><a href="https://dplyr.tidyverse.org" class="external-link">library(dplyr)</a></code> before <code><a href="https://dm.cynkra.com/">library(dm)</a></code>. In a future version, the dm package will no longer reexport all dplyr functions. The new pattern ensures that scripts written today will work after that change. Set <code>options(dm.suppress_dplyr_startup_message = TRUE)</code> to turn off the startup message.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span> <span class="co"># or library(tidyverse)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dm.cynkra.com/">dm</a></span><span class="op">)</span></span></code></pre></div>
+</li>
 <li>
 <p><code><a href="../reference/copy_dm_to.html">copy_dm_to()</a></code> now uses <code><a href="../reference/dm_sql.html">dm_sql()</a></code> internally and creates key constraints on the database (<a href="https://github.com/krlmlr" class="external-link">@krlmlr</a>, <a href="https://github.com/cynkra/dm/issues/1887" class="external-link">#1887</a>, <a href="https://github.com/cynkra/dm/issues/2022" class="external-link">#2022</a>). Unique keys and autoincrement primary keys (<a href="https://github.com/cynkra/dm/issues/1725" class="external-link">#1725</a>) are set up automatically. Data models with cyclic foreign-key references are now supported on all databases that allow <code>ALTER TABLE</code> to add constraints (all except DuckDB and SQLite, <a href="https://github.com/cynkra/dm/issues/664" class="external-link">#664</a>).</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">con</span> <span class="op">&lt;-</span> <span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbConnect.html" class="external-link">dbConnect</a></span><span class="op">(</span><span class="fu">duckdb</span><span class="fu">::</span><span class="fu"><a href="https://r.duckdb.org/reference/duckdb.html" class="external-link">duckdb</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/dm_financial.html">dm_financial</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="../reference/copy_dm_to.html">copy_dm_to</a></span><span class="op">(</span><span class="va">con</span>, <span class="va">.</span>, temporary <span class="op">=</span> <span class="cn">FALSE</span>, set_key_constraints <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
@@ -132,11 +127,10 @@
 </li>
 </ul></div>
 <div class="section level3">
-<h3 id="bug-fixes-1-0-99-9900">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-1-0-99-9900"></a></h3>
+<h3 id="bug-fixes-1-1-0">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-1-1-0"></a></h3>
 <ul><li><p><code>dm_from_con(learn_keys = TRUE, .names = )</code> now correctly applies the specified table naming pattern (<a href="https://github.com/owenjonesuob" class="external-link">@owenjonesuob</a>, <a href="https://github.com/cynkra/dm/issues/2213" class="external-link">#2213</a>, <a href="https://github.com/cynkra/dm/issues/2214" class="external-link">#2214</a>).</p></li>
 <li><p><code><a href="../reference/dm_from_con.html">dm_from_con()</a></code> no longer learns tables from all schemas by default for Postgres, MSSQL, and MariaDB (<a href="https://github.com/mgirlich" class="external-link">@mgirlich</a>, <a href="https://github.com/cynkra/dm/issues/1440" class="external-link">#1440</a>, <a href="https://github.com/cynkra/dm/issues/1448" class="external-link">#1448</a>). The defaults are <code>"public"</code> (Postgres), <code>"dbo"</code> (MSSQL), and the current database (MariaDB), avoiding spurious system tables.</p></li>
-<li><p>Fixed a spurious message from <code><a href="../reference/dm_rm_fk.html">dm_rm_fk()</a></code> when foreign keys reference non-primary-key columns (<a href="https://github.com/cynkra/dm/issues/1270" class="external-link">#1270</a>, <a href="https://github.com/cynkra/dm/issues/2367" class="external-link">#2367</a>).</p></li>
-<li><p>Corrected the deprecation warning message for <code><a href="../reference/deprecated.html">dm_squash_to_tbl()</a></code> (<a href="https://github.com/cynkra/dm/issues/1364" class="external-link">#1364</a>, <a href="https://github.com/cynkra/dm/issues/2302" class="external-link">#2302</a>).</p></li>
+<li><p><code><a href="../reference/dm_rm_fk.html">dm_rm_fk()</a></code> no longer issues a spurious message when foreign keys reference non-primary-key columns (<a href="https://github.com/cynkra/dm/issues/1270" class="external-link">#1270</a>, <a href="https://github.com/cynkra/dm/issues/2367" class="external-link">#2367</a>).</p></li>
 <li><p><code><a href="../reference/dm_paste.html">dm_paste()</a></code> limits its pipelines to up to 100 steps, splitting longer pipelines as needed (<a href="https://github.com/cynkra/dm/issues/2301" class="external-link">#2301</a>).</p></li>
 </ul></div>
 </div>
