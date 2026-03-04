@@ -1,5 +1,20 @@
 # Changelog
 
+## dm 1.1.0.9001
+
+### Bug fixes
+
+- Fix igraph fallback to match igraph behavior for undirected edges and
+  girth ([\#2424](https://github.com/cynkra/dm/issues/2424),
+  [\#2425](https://github.com/cynkra/dm/issues/2425)).
+
+- Remove spurious debugging output.
+
+### Testing
+
+- Snapshot updates for rcc-smoke
+  ([@1741643](https://github.com/1741643)+krlmlr).
+
 ## dm 1.1.0.9000
 
 ### Chore
