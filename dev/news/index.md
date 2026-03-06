@@ -1,6 +1,15 @@
 # Changelog
 
-## dm 1.1.0.9001
+## dm 1.1.1.9000
+
+### fledge
+
+- CRAN release v1.1.1
+  ([\#2428](https://github.com/cynkra/dm/issues/2428)).
+
+## dm 1.1.1
+
+CRAN release: 2026-03-05
 
 ### Bug fixes
 
@@ -9,25 +18,6 @@
   [\#2425](https://github.com/cynkra/dm/issues/2425)).
 
 - Remove spurious debugging output.
-
-### Testing
-
-- Snapshot updates for rcc-smoke
-  ([@1741643](https://github.com/1741643)+krlmlr).
-
-## dm 1.1.0.9000
-
-### Chore
-
-- Re-add remote while we’re waiting for a maintainer update.
-
-- Auto-update from GitHub Actions
-  ([\#2421](https://github.com/cynkra/dm/issues/2421)).
-
-### fledge
-
-- CRAN release v1.1.0
-  ([\#2420](https://github.com/cynkra/dm/issues/2420)).
 
 ## dm 1.1.0
 
