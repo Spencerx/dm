@@ -1,5 +1,12 @@
 # Changelog
 
+## dm 1.1.1.9001
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#2430](https://github.com/cynkra/dm/issues/2430)).
+
 ## dm 1.1.1.9000
 
 ### fledge
