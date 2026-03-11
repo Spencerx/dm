@@ -5,7 +5,7 @@ to see their documentation.
 
 - dplyr:
 
-  [`%>%`](https://dplyr.tidyverse.org/reference/reexports.html),
+  `%>%`,
   [`anti_join`](https://dplyr.tidyverse.org/reference/filter-joins.html),
   [`arrange`](https://dplyr.tidyverse.org/reference/arrange.html),
   [`collect`](https://dplyr.tidyverse.org/reference/compute.html),
@@ -36,7 +36,7 @@ to see their documentation.
 
 - tibble:
 
-  [`glimpse`](https://tibble.tidyverse.org/reference/reexports.html),
+  [`glimpse`](https://pillar.r-lib.org/reference/glimpse.html),
   [`tibble`](https://tibble.tidyverse.org/reference/tibble.html)
 
 - tidyr:
