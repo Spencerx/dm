@@ -73,6 +73,6 @@ dm_nycflights13() \%>\%
 }
 \seealso{
 Other flattening functions:
-\code{\link{dm_flatten_to_tbl}()}
+\code{\link[=dm_flatten_to_tbl]{dm_flatten_to_tbl()}}
 }
 \concept{flattening functions}

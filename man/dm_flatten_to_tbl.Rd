@@ -74,6 +74,6 @@ dm_financial() \%>\%
 }
 \seealso{
 Other flattening functions:
-\code{\link{dm_flatten}()}
+\code{\link[=dm_flatten]{dm_flatten()}}
 }
 \concept{flattening functions}

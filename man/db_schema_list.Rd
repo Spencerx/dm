@@ -37,8 +37,8 @@ default: database addressed by \code{con}.
 }
 \seealso{
 Other schema handling functions:
-\code{\link{db_schema_create}()},
-\code{\link{db_schema_drop}()},
-\code{\link{db_schema_exists}()}
+\code{\link[=db_schema_create]{db_schema_create()}},
+\code{\link[=db_schema_drop]{db_schema_drop()}},
+\code{\link[=db_schema_exists]{db_schema_exists()}}
 }
 \concept{schema handling functions}

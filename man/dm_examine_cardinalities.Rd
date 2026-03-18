@@ -52,6 +52,6 @@ dm_nycflights13() \%>\%
 }
 \seealso{
 Other cardinality functions:
-\code{\link{examine_cardinality}()}
+\code{\link[=examine_cardinality]{examine_cardinality()}}
 }
 \concept{cardinality functions}

@@ -59,6 +59,6 @@ decomposed_table$parent_table
 }
 \seealso{
 Other table surgery functions:
-\code{\link{reunite_parent_child}()}
+\code{\link[=reunite_parent_child]{reunite_parent_child()}}
 }
 \concept{table surgery functions}
