@@ -32,8 +32,8 @@ database on the connected MSSQL-server; default: database addressed by \code{con
 }
 \seealso{
 Other schema handling functions:
-\code{\link{db_schema_create}()},
-\code{\link{db_schema_drop}()},
-\code{\link{db_schema_list}()}
+\code{\link[=db_schema_create]{db_schema_create()}},
+\code{\link[=db_schema_drop]{db_schema_drop()}},
+\code{\link[=db_schema_list]{db_schema_list()}}
 }
 \concept{schema handling functions}

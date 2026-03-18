@@ -158,6 +158,6 @@ examine_cardinality(d1, d2)
 }
 \seealso{
 Other cardinality functions:
-\code{\link{dm_examine_cardinalities}()}
+\code{\link[=dm_examine_cardinalities]{dm_examine_cardinalities()}}
 }
 \concept{cardinality functions}
