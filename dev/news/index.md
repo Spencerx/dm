@@ -1,5 +1,12 @@
 # Changelog
 
+## dm 1.1.1.9004
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#2439](https://github.com/cynkra/dm/issues/2439)).
+
 ## dm 1.1.1.9003
 
 ### Chore
