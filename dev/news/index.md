@@ -1,5 +1,13 @@
 # Changelog
 
+## dm 1.1.1.9005
+
+### Chore
+
+- Ensure exported dm functions call `check_dm()` first
+  ([\#2441](https://github.com/cynkra/dm/issues/2441),
+  [\#2442](https://github.com/cynkra/dm/issues/2442)).
+
 ## dm 1.1.1.9004
 
 ### Chore
