@@ -1,47 +1,36 @@
 # Changelog
 
-## dm 1.1.1.9005
+## dm 1.1.2.9002
 
-### Chore
+### Continuous integration
 
-- Ensure exported dm functions call `check_dm()` first
-  ([\#2441](https://github.com/cynkra/dm/issues/2441),
-  [\#2442](https://github.com/cynkra/dm/issues/2442)).
+- Move validate logic into custom hooks driven by a matrix entry
+  ([\#2470](https://github.com/cynkra/dm/issues/2470)).
 
-## dm 1.1.1.9004
+### Testing
 
-### Chore
+- Snapshot updates for rcc-smoke (null)
+  ([\#2468](https://github.com/cynkra/dm/issues/2468)).
 
-- Auto-update from GitHub Actions
-  ([\#2439](https://github.com/cynkra/dm/issues/2439)).
+## dm 1.1.2.9001
 
-## dm 1.1.1.9003
+### Continuous integration
 
-### Chore
+- Update ccache-action reference.
 
-- Auto-update from GitHub Actions
-  ([\#2434](https://github.com/cynkra/dm/issues/2434)).
+## dm 1.1.2.9000
 
-## dm 1.1.1.9002
+- Switching to development version.
 
-### Chore
+## dm 1.1.2
 
-- Auto-update from GitHub Actions
-  ([\#2432](https://github.com/cynkra/dm/issues/2432)).
+CRAN release: 2026-05-17
 
-## dm 1.1.1.9001
+### Bug fixes
 
-### Chore
-
-- Auto-update from GitHub Actions
-  ([\#2430](https://github.com/cynkra/dm/issues/2430)).
-
-## dm 1.1.1.9000
-
-### fledge
-
-- CRAN release v1.1.1
-  ([\#2428](https://github.com/cynkra/dm/issues/2428)).
+- Fix for upcoming dbplyr 2.6.0 release
+  ([@hadley](https://github.com/hadley),
+  [\#2454](https://github.com/cynkra/dm/issues/2454)).
 
 ## dm 1.1.1
 
