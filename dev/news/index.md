@@ -1,5 +1,12 @@
 # Changelog
 
+## dm 1.1.2.9003
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#2472](https://github.com/cynkra/dm/issues/2472)).
+
 ## dm 1.1.2.9002
 
 ### Continuous integration
