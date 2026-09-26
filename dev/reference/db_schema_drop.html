@@ -83,8 +83,9 @@ For certain DBMS it is possible to force the removal of a non-empty schema, see 
 
 
 <dt id="arg-force">force<a class="anchor" aria-label="anchor" href="#arg-force"></a></dt>
-<dd><p>Boolean, default <code>FALSE</code>. Set to <code>TRUE</code> to drop a schema and
-all objects it contains at once. Currently only supported for Postgres/Redshift.</p></dd>
+<dd><p>Boolean, default <code>FALSE</code>.
+Set to <code>TRUE</code> to drop a schema and all objects it contains at once.
+Currently only supported for Postgres/Redshift.</p></dd>
 
 
 <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
@@ -101,8 +102,8 @@ all objects it contains at once. Currently only supported for Postgres/Redshift.
 <p>An error is thrown if no schema of that name exists.</p>
 <p>The argument <code>schema</code> (and <code>dbname</code> for MSSQL) can be provided as <code>SQL</code> objects.
 Keep in mind, that in this case it is assumed that they are already correctly quoted as identifiers.</p>
-<p>Additional arguments are:</p><ul><li><p><code>dbname</code>: supported for MSSQL. Remove a schema from a different
-database on the connected MSSQL-server; default: database addressed by <code>con</code>.</p></li>
+<p>Additional arguments are:</p><ul><li><p><code>dbname</code>: supported for MSSQL.
+Remove a schema from a different database on the connected MSSQL-server; default: database addressed by <code>con</code>.</p></li>
 </ul></div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
